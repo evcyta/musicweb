@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Muéstrate</title>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/style-login.css">
+      <!-- Estilos -->
+  <link href="css/style.css">
+</head>
+
+<body>
+        <div class="container">
+                <div class="content">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1 class="mt-5">Ingresa tus datos</h1>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="form-group col-md-8">
+                        <label>Nombre civil*</label><label class="validation-error hide" id="nombreCivilValidationError">This field is required.</label>
+                        <input type="text" class="form-control" name="nombreCivil" id="nombreCivil">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label>Nombre artístico</label>
+                        <input type="text" class="form-control" name="nombreArt" id="nombreArt">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label>Dirección</label>
+                        <input type="text" class="form-control" name="direccion" id="direccion">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label>Ciudad</label>
+                        <input type="text" class="form-control" name="ciudad" id="ciudad">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label>Teléfono</label>
+                        <input type="text" class="form-control" name="telefono" id="telefono">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </form>
+            <td>
+                <table class="list" id="listaMusicos">
+                    <thead>
+                            <tr>
+                                    <th scope="col">Nombre civil</th>
+                                    <th scope="col">Nombre artístico</th>
+                                    <th scope="col">Dirección</th>
+                                    <th scope="col">Ciudad</th>
+                                    <th scope="col">Teléfono</th>
+                                    <th scope="col">Email</th>
+                                  </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
