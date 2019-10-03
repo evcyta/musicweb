@@ -8,65 +8,67 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/css/style-login.css">
       <!-- Estilos -->
-  <link href="css/style.css">
+      <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-        <div class="container">
+    <div class="container">
                 <div class="content">
         <div class="row">
             <div class="col-sm-8">
-                <h1 class="mt-5">Ingresa tus datos</h1>
+                <h1 class="h1 text-white center">Ingresa tus datos</h1>
                     <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div class="form-group col-md-8">
-                        <label>Nombre civil*</label><label class="validation-error hide" id="nombreCivilValidationError">This field is required.</label>
-                        <input type="text" class="form-control" name="nombreCivil" id="nombreCivil">
+                        <label><h5 class="text-white">Nombre civil *</h5></label><label class="validation-error hide" id="nombreCivil1"><h6 class="text-white">Este campo es obligatorio</h6></label></label><input type="text" class="form-control" name="nombreCivil" id="nombreCivil">
                     </div>
                     <div class="form-group col-md-8">
-                        <label>Nombre artístico</label>
+                        <label><h5 class="text-white">Nombre artístico</h5></label>
                         <input type="text" class="form-control" name="nombreArt" id="nombreArt">
                     </div>
                     <div class="form-group col-md-8">
-                        <label>Dirección</label>
+                        <label><h5 class="text-white">Dirección</h5></label>
                         <input type="text" class="form-control" name="direccion" id="direccion">
                     </div>
                     <div class="form-group col-md-8">
-                        <label>Ciudad</label>
+                        <label><h5 class="text-white">Ciudad</h5></label>
                         <input type="text" class="form-control" name="ciudad" id="ciudad">
                     </div>
                     <div class="form-group col-md-8">
-                        <label>Teléfono</label>
+                        <label><h5 class="text-white">Teléfono</h5></label>
                         <input type="text" class="form-control" name="telefono" id="telefono">
                     </div>
                     <div class="form-group col-md-8">
-                        <label>Email</label>
+                        <label><h5 class="text-white">Email</h5></label>
                         <input type="email" class="form-control" name="email" id="email">
                     </div>
                     <div  class="form-action-buttons">
                         <input type="submit" class="btn btn-primary" value="Submit">
                     </div>
                 </form>
-            <td>
-                <table class="list" id="listaMusicos">
-                    <thead>
-                            <tr>
-                                    <th scope="col">Nombre civil</th>
-                                    <th scope="col">Nombre artístico</th>
-                                    <th scope="col">Dirección</th>
-                                    <th scope="col">Ciudad</th>
-                                    <th scope="col">Teléfono</th>
-                                    <th scope="col">Email</th>
+            </div>  
+        </div>
+        <hr size="10"/>
+    </div>              
+                    <div class="container">
+                        <div class="table-responsive">
+                            <table class="table" id="listaMusicos">
+                            <thead class="table table-dark">
+                                <tr>
+                                    <th scope="col"><h6 class="text-white">Nombre civil</h5></th>
+                                    <th scope="col"><h6 class="text-white">Nombre artístico</h5></th>
+                                    <th scope="col"><h6 class="text-white">Dirección</h5></th>
+                                    <th scope="col"><h6 class="text-white">Ciudad</h5></th>
+                                    <th scope="col"><h6 class="text-white">Teléfono</h5></th>
+                                    <th scope="col"><h6 class="text-white">Email</h5></th>
                                   </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
+                            </thead>
+                                <tbody>
+                            </table>
+                        </div>
             </td>
-</div>
+                    </div>
+
     <script src="script.js"></script>
 </body>
 
